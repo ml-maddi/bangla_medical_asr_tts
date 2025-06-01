@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangla Medical ASR TTS - TTS Samples </title>
-    <style>
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        audio {
-            width: 100%; /* Makes the audio player responsive */
-        }
-    </style>
+   <style>
+           table {
+               width: 100%; /* Or a specific width like 1200px */
+               margin: 20px auto;
+               border-collapse: collapse;
+               /* table-layout: fixed; /* Often good with percentage widths */
+           }
+           th, td {
+               border: 1px solid #ddd;
+               padding: 8px;
+               text-align: left;
+               word-break: break-word;
+           }
+           th {
+               background-color: #f2f2f2;
+           }
+           audio {
+               width: 100%;
+           }
+
+           /* Define widths for each column */
+           /* Adjust percentages as needed. They should ideally sum to 100% if table-layout:fixed is used or if you want precise distribution */
+           th:nth-child(1), td:nth-child(1) { width: 25%; } /* Bangla Sentence */
+           th:nth-child(2), td:nth-child(2) { width: 25%; } /* English Transliteration */
+           th:nth-child(3), td:nth-child(3) { width: 20%; } /* English Translation */
+           th:nth-child(4), td:nth-child(4) { width: 10%; } /* Model Name */
+           th:nth-child(5), td:nth-child(5) { width: 20%; } /* Audio - give this more % */
+       </style>
 </head>
 <body>
 
-<h1>My Audio Project 🎧</h1>
+<h1>Bangla Medical ASR TTS - TTS Samples 🎧</h1>
 
 <table>
     <thead>
@@ -54,7 +64,7 @@
             <td>গলব্লাডার স্টোন হলে ল্যাপারোস্কোপিক সার্জারি এখন খুবই কমন প্র্যাকটিস।</td>
             <td>Gallbladder stone hole laparoscopic surgery ekhon khubi common practice.</td>
             <td>Laparoscopic surgery is now very common practice for gallbladder stones.</td>
-            <td>Google Bangla TTS</td>
+            <td>Indic TTS</td>
             <td>
                 <audio controls>
                     <source src="audio/indic_2.wav" type="audio/wav">
